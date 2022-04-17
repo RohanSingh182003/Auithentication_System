@@ -21,7 +21,8 @@ def loginuser(request):
             login(request,user)
             return redirect('/')
         else:
-            return render(request,'login.html')
+            params = {'reject':'Wrong! Username / Password , Enter Correct One..'}
+            return render(request,'login.html',params)
             
     return render(request,'login.html')
 

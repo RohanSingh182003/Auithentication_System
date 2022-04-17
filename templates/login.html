@@ -95,6 +95,7 @@
 <body>
     <div class="container">
         <h1>Add Members</h1>
+        <p style="color: red;">{{reject}}</p>
         <form action="/loginuser/" method="POST">
             {% csrf_token %} 
             <input type="text" name="username" id="first" placeholder="Enter Username"> <br> <br>
